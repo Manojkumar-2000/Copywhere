@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "767349165032",
+    "project_id": "copywhere",
+    "storage_bucket": "copywhere.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767349165032:android:c1175b5a747d9df4c9f25d",
+        "android_client_info": {
+          "package_name": "com.miniproject.copywhere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767349165032-qqg3ac7jtqgr9j0tp17ka83emmsv5vla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmJO9qFSVlnH8GfEAQl2rX5U87p8K7hiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767349165032-qqg3ac7jtqgr9j0tp17ka83emmsv5vla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
