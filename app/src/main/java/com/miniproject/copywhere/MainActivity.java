@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         Process_image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+            call_resulactivity();
             }
         });
         exit.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void call_resulactivity() {
+        Intent intent=new Intent(this,resultactivity.class);
+        intent.putExtra("imageUri", image_uri.toString());
+        startActivity(intent);
     }
 
     @Override

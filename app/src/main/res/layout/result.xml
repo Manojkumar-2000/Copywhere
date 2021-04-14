@@ -8,7 +8,7 @@
 
     <ImageView
         android:id="@+id/processed_image"
-        android:layout_width="378dp"
+        android:layout_width="match_parent"
         android:layout_height="337dp"
         android:contentDescription="processed image"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,7 +21,7 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/result_text_view"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="216dp"
         android:hint=""
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,7 +45,7 @@
         app:srcCompat="@drawable/ic_baseline_content_copy_24" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/backtomain"
         android:layout_width="85dp"
         android:layout_height="78dp"
         app:layout_constraintBottom_toBottomOf="parent"
