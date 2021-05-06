@@ -1,8 +1,14 @@
 package com.miniproject.copywhere;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Editable;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -36,7 +42,23 @@ public class resultactivity extends AppCompatActivity{
         image_uri = Uri.parse(getIntent().getStringExtra("imageUri"));
         processed_image_view.setImageURI(image_uri);
         extractimagetext(image_uri);
-        
+        copy2clip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                String cliptext= result_text.getText().toString();
+                ClipData clip = ClipData.newPlainText("CLIPBOARD", cliptext);
+                clipboard.setPrimaryClip(clip);
+                Toast.makeText(resultactivity.this,"Copied to clipboard",Toast.LENGTH_SHORT).show();
+            }
+        });
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resultactivity.this.finish();
+                System.exit(0);
+            }
+        });
     }
 
    private void extractimagetext(Uri image_uri) {
@@ -70,8 +92,7 @@ public class resultactivity extends AppCompatActivity{
         else{
             for (FirebaseVisionText.Block block: firebaseVisionText.getBlocks()){
                 String text= block.getText();
-                Toast.makeText(this, ""+text, Toast.LENGTH_SHORT).show();
-                result_text.setText(text);
+                result_text.append(text);
             }
         }
     }

@@ -21,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Setting the layout
         setContentView(R.layout.activity_main);
+        // assigning the ui elements to their variables
         Select_image = findViewById(R.id.add_image);
         exit = findViewById(R.id.exit);
         Process_image = findViewById(R.id.Process);
@@ -42,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                MainActivity.this.finish();
+                System.exit(0);
             }
         });
     }

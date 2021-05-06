@@ -49,27 +49,26 @@
 
     <ImageButton
         android:id="@+id/Process"
-        android:layout_width="86dp"
-        android:layout_height="79dp"
+        android:layout_width="53dp"
+        android:layout_height="61dp"
         android:background="@drawable/round"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.932"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selected_image"
-        app:layout_constraintVertical_bias="0.404"
+        app:layout_constraintVertical_bias="0.217"
         app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
 
     <ImageView
         android:id="@+id/selected_image"
-        android:layout_width="404dp"
-        android:layout_height="525dp"
+        android:layout_width="match_parent"
+        android:layout_height="559dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.141"
+        app:layout_constraintVertical_bias="0.0"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
