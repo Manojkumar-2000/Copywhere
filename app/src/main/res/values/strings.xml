@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Copywhere</string>
+    <string name="capture_button">This button is used to capture image from the camera</string>
+    <string name="photo_album">This button is used to open photo album for selecting an image</string>
+    <string name="widget_button">This button is used to start a widget on the screen to capture screenshot</string>
+    <string name="appbar_help">Help</string>
+    <string name="help_content_description">This icon gives tips and explanation of how the app can be used</string>
+    <string name="imageview_content_description">This image view contains the selected image</string>
+    <string name="go_button_content_description">This button sends the selected image for text extraction</string>
+    <string name="photos_content_description">This button opens the Photo album to select an image</string>
+    <string name="camera_button_content_description">This button opens the camera to capture image</string>
+    <string name="widget_button_content_description">This button starts an notification bar service</string>
+    <string name="appbar_layout__content_description">This layout contains the material appbar</string>
+    <string name="appbar_content_description">This is the appbar that contains help button and exit button</string>
+    <string name="frame_layout_content_description">This is the bottom green box that contains three buttons</string>
+    <string name="copy_button_content_description">copies the text from the selected blocks</string>
+    <string name="result_image_content_description">this image view holds the processed image</string>
+    <string name="extracted_string_content_description">this text box contains the extracted text</string>
+    <string name="crop_button_content_description">this button crops the image in the image view</string>
+    <string name="crop_button_title">crop</string>
+    <string name="channel_name">Screen capture</string>
+    <string name="channel_description">Notification bar activity to extract text from the last taken screenshot</string>
 </resources>
